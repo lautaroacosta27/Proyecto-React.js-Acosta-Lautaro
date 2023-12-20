@@ -5,10 +5,15 @@ export const NavBar = ({ allProducts, setAllProducts, total, countProducts,setTo
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const [active, setActive] = useState(false);
   return (
+    
+    <div>
+    <section className='promotion'>
+    <div class="text-promotion1" > 🌈🌈🌈 25% DE DESCUENTO HASTA EL 25 DE DICIEMBRE 🌈🌈🌈</div>
+    </section>
     <nav className="navbar navbar-expand-md botonera">
       <div className="container-fluid">
-          <a className='nameBrand' href="../index.html">
-            <img  src= "../img/logo.png" alt="" />
+          <a className='nameBrand' href="./index.html">
+            <img  src= "/img/logo.png" alt="" />
           </a>
         <button
           className="navbar-toggler"
@@ -143,9 +148,7 @@ export const NavBar = ({ allProducts, setAllProducts, total, countProducts,setTo
                     <h3>Total:</h3>
                     <span className="total-pagar">${total}</span>
                   </div>
-                  <button className='btn-clear-all'>
-                    Vaciar carrito
-                  </button>
+          
                 </>
               ) : (
                 <p className="cart-empty">El carrito está vacío</p>
@@ -155,7 +158,7 @@ export const NavBar = ({ allProducts, setAllProducts, total, countProducts,setTo
         </div>
       </div>
     </nav>
-
+    </div>
   );
 };
 

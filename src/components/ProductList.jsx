@@ -9,6 +9,7 @@ export const ProductList = ({
     total, 
     setTotal 
 }) => {
+
     const onAddProduct = (product) => {
         let updatedProducts;
       
@@ -22,11 +23,9 @@ export const ProductList = ({
           updatedProducts = [...allProducts, { ...product, quantity: 1 }];
         }
       
-        // Actualizar el estado con los productos y contar
         setCountProducts((prevCount) => prevCount + 1);
         setAllProducts(updatedProducts);
       
-        // Calcular el total sumando los precios de todos los productos en el carrito
         const newTotal = updatedProducts.reduce(
           (acc, item) => acc + (item.price || 0) * (item.quantity || 1),
           0

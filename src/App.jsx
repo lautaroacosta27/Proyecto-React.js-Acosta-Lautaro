@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react'
 import ProductList from './components/ProductList';
 import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 
 function App() {
   const [allProducts, setAllProducts] = useState([]);
@@ -11,6 +12,7 @@ function App() {
 
   return (
     <>
+    
     <NavBar 
      allProducts={allProducts}
      setAllProducts={setAllProducts}
@@ -27,7 +29,7 @@ function App() {
          countProducts={countProducts}
          setCountProducts={setCountProducts}
     />
-
+    <Footer/>
     </>
   )
 }
