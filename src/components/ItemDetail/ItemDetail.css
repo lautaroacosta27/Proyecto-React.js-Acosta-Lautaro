@@ -1,0 +1,11 @@
+p{
+    font-size: 0.8em;
+}
+
+.card{
+    display: flex;
+    margin-left: 35%;
+}
+.info-product{
+    text-align: center;
+}

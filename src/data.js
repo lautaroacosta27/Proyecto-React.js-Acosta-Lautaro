@@ -12,7 +12,7 @@ const productos = [
       id: "Buzo-Tussy-OVERSIZE-[Rosa]",
       nombre: 'Buzo Tussy OVERSIZE [Rosa]',
       descripcion: "Tela 100% algodon con corta oversize",
-      stock: 2,
+      stock: 10,
       precio: 35000,
       categoria: "buzos",
       imagen: '/img/Catalogo/buzo-rosa.webp'
@@ -21,7 +21,7 @@ const productos = [
       id: "Crop-REHAB-[Negro]",
       nombre: 'Crop REHAB [Negro]',
       descripcion: "Poliester corte rigido",
-      stock: 6,
+      stock: 10,
       precio: 19000,
       categoria: "remeras",
       imagen:  '/img/Catalogo/crop.webp'
@@ -29,8 +29,8 @@ const productos = [
     {
       id: "Pantalon-CARGO-[Gris]",
       nombre: 'Pantalon CARGO [Gris]',
-      descripcion: "Este es el mejor televisor del mundo",
-      stock: 9,
+      descripcion: "Pantalon super ancho",
+      stock: 10,
       precio: 25000,
       categoria: "pantalones",
       imagen: '/img/Catalogo/pantalon-gris.jpg'
@@ -39,7 +39,7 @@ const productos = [
       id: "Campera-Universitaria-T-Shit",
       nombre: 'Campera Universitaria T-Shit',
       descripcion: "Tela 100% algodon con corta oversize",
-      stock: 9,
+      stock: 10,
       precio: 25000,
       categoria: "remeras",
       imagen: '/img/Catalogo/campera-verde.webp'
@@ -48,7 +48,7 @@ const productos = [
       id: "Camisaco-Family",
       nombre:'Camisaco Family',
       descripcion: "Tela 100% algodon con corta oversize",
-      stock: 15,
+      stock: 10,
       precio: 25000,
       categoria: "remeras",
       imagen: '/img/Catalogo/camisaco.webp'
