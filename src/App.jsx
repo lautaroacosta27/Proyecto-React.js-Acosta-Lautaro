@@ -1,36 +1,24 @@
-import { useState } from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import React from 'react'
-import ProductList from './components/ProductList';
-import NavBar from './components/NavBar';
-import Footer from './components/Footer';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
+import NavBar from "./components/NavBar/NavBar";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+
 
 function App() {
-  const [allProducts, setAllProducts] = useState([]);
-  const [total, setTotal] = useState(0);
-  const [countProducts, setCountProducts] = useState(0);
 
   return (
-    <>
-    
-    <NavBar 
-     allProducts={allProducts}
-     setAllProducts={setAllProducts}
-     total={total}
-     setTotal={setTotal}
-     countProducts={countProducts}
-     setCountProducts={setCountProducts}
-     />
-    <ProductList 
-         allProducts={allProducts}
-         setAllProducts={setAllProducts}
-         total={total}
-         setTotal={setTotal}
-         countProducts={countProducts}
-         setCountProducts={setCountProducts}
-    />
-    <Footer/>
-    </>
+
+  <BrowserRouter>
+  <NavBar/>
+      <Routes>
+        <Route path="/" element={<ItemListContainer  />} />
+        <Route path="/categoria/:categoria" element={<ItemListContainer />} />
+        <Route path="/detalle/:idProducto" element={<ItemDetailContainer />} />
+        <Route path="*" element={ <div>Pagina no encontrada</div> } />
+      </Routes>
+    </BrowserRouter>
+
+
   )
 }
 
