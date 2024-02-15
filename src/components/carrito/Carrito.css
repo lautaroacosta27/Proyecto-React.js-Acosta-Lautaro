@@ -1,0 +1,75 @@
+.carrito-vacio {
+    text-align: center;
+    margin-top: 5%;
+}
+p{
+    font-size: 1em;
+}
+.button{
+    text-decoration: none;
+    color: black;
+    border: solid 2px black;
+    width: 210px;
+    padding: 5px;
+    text-align: center;
+}
+.button:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.imagen {
+    margin-left: 40%;
+    padding: 20px;
+    height: 400px;
+}
+
+.texto {
+    text-align: center;
+    font-size: 1em;
+}
+
+.botones-carrito-borrar {
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    border:  solid 2px black;
+    width: 150px;
+    height: 31px;
+    text-align: center;
+    margin-left: 46.5%;
+}
+.botones-carrito-continuar{
+    text-decoration: none;
+    margin-bottom: 5%;
+}
+.boton-continuar{
+    margin-left: 45%;
+    text-decoration: none;
+    color: black;
+    border: solid 2px black;
+    width: 200px;
+    text-align: center;
+    margin-top: 10px;
+    height: 34px;
+}
+
+.botones-carrito-borrar p {
+    cursor: pointer;
+}
+
+.botones-carrito-borrar p:hover,
+.botones-carrito-continuar:hover {
+    color: black;
+    text-decoration: none;
+}
+button{
+    background-color: white;
+    border: solid 2px black;
+    width: 100px;
+    margin-left: 47%;
+}
+
+h3{
+    text-align: center;
+}
