@@ -1,13 +1,12 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore"
-
+import {getFirestore} from "firebase/firestore"
 const firebaseConfig = {
-  apiKey: "AIzaSyBk5rWoTLChAt4g48FVKOD51SfHY-ZTxoQ",
-  authDomain: "react-49940.firebaseapp.com",
-  projectId: "react-49940",
-  storageBucket: "react-49940.appspot.com",
-  messagingSenderId: "750332286158",
-  appId: "1:750332286158:web:ccd5ae34336902560dec9f"
+  apiKey: "AIzaSyAhkbu8OTHcYqEtrc54vh0IpuEpnEIvvTo",
+  authDomain: "lautaro-acosta-ecommerce-79a9e.firebaseapp.com",
+  projectId: "lautaro-acosta-ecommerce-79a9e",
+  storageBucket: "lautaro-acosta-ecommerce-79a9e.appspot.com",
+  messagingSenderId: "845759042660",
+  appId: "1:845759042660:web:3e11221488e9ac90a4fb71"
 };
 
 initializeApp(firebaseConfig);
